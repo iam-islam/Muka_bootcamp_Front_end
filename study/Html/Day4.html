@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 04 - Forms and Inputs</title>
+ </head>
+ <body>
+  <!-- Header. -->
+  <header>
+   <a href="#">ISLAM</a>
+   <nav>
+    <ul>
+     <li>
+      <a href="#contact">Contact</a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+
+  <!-- Main. -->
+  <main>
+   <h1>Sign-Up</h1>
+   <form action="#" method="GET">
+    <fieldset>
+     <legend>Personal Information</legend>
+     <div>
+      <label for="name">Name</label>
+      <br />
+      <input type="text" name="name" id="name" />
+     </div>
+     <br />
+     <div>
+      <label for="email">Email</label>
+      <br />
+      <input type="email" name="email" id="email" />
+     </div>
+     <br />
+     <div>
+      <label for="password">Password</label>
+      <br />
+      <input type="password" name="password" id="password" />
+     </div>
+    </fieldset>
+
+    <fieldset>
+     <legend>Gender</legend>
+     <div>
+      <div>
+       <input type="radio" name="gender" id="male" value="male" />
+       <label for="male">Male</label>
+      </div>
+      <div>
+       <input type="radio" name="gender" id="female" value="female" />
+       <label for="female">Female</label>
+      </div>
+     </div>
+    </fieldset>
+
+    <fieldset>
+     <legend>Hobbies</legend>
+     <div>
+      <div>
+       <input type="checkbox" name="hobbies" id="reading" value="reading" />
+       <label for="reading">Reading</label>
+      </div>
+      <div>
+       <input type="checkbox" name="hobbies" id="gym" value="gym" />
+       <label for="gym">Gym</label>
+      </div>
+      <div>
+       <input type="checkbox" name="football" id="football" value="football" />
+       <label for="football">Football</label>
+      </div>
+     </div>
+    </fieldset>
+
+    <input type="submit" name="submit" value="submit" />
+   </form>
+
+   <hr />
+
+   <form id="contact">
+    <fieldset>
+     <legend>Contact</legend>
+     <div>
+      <label for="name">Name</label>
+      <br />
+      <input type="text" name="name" id="name" />
+     </div>
+     <br />
+     <div>
+      <label for="email">Email</label>
+      <br />
+      <input type="email" name="email" id="email" />
+     </div>
+     <br />
+     <div>
+      <label for="message">Message</label>
+      <br />
+      <textarea id="message" cols="20" rows="10"></textarea>
+     </div>
+
+     <input type="submit" name="submit" value="submit" />
+    </fieldset>
+   </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+   <p><a href="#">Geeks</a> &copy; 2030 All rights reserved.</p>
+  </footer>
+ </body>
+</html>
