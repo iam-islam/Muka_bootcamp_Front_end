@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 05 - Forms and Inputs</title>
+ </head>
+ <body>
+  <!-- Header. -->
+  <header>
+   <a href="#">ISLAM</a>
+   <nav>
+      <a href="#elzero">Elzero web school</a>
+      &nbsp;
+      <a href="#audio">Audio</a>
+      &nbsp;
+      <a href="#video">Video</a>
+      &nbsp;
+      <a href="#contact">Contact</a>
+      &nbsp;
+   </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+   <h2>Elzero Wweb School</h2>
+   <iframe id="elzero" src="https://elzero.org/" width="88%" height="400"></iframe>
+
+   <h2>Audio</h2>
+   <audio controls id="audio">
+    <source src="media/audio.mp3" type="audio/mpeg">
+
+    Your browser not support Audio tag.
+   </audio>
+
+   <h2>Video</h2>
+   <video width="50%" controls id="video">
+    <source src="media/video.mp4" type="audio/mp4">
+    Your browser not support Video tag.
+   </video>
+
+
+   <form id="contact">
+    <fieldset>
+     <legend>Contact</legend>
+     <div>
+      <label for="name">Name</label>
+      <br />
+      <input type="text" name="name" id="name" />
+     </div>
+     <br />
+     <div>
+      <label for="email">Email</label>
+      <br />
+      <input type="email" name="email" id="email" />
+     </div>
+     <br />
+     <div>
+      <label for="message">Message</label>
+      <br />
+      <textarea id="message" cols="20" rows="10"></textarea>
+     </div>
+
+     <input type="submit" name="submit" value="submit" />
+    </fieldset>
+   </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+   <p><a href="#">Geeks</a> &copy; 2030 All rights reserved.</p>
+  </footer>
+ </body>
+ </html>
