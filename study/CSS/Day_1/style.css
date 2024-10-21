@@ -9,7 +9,7 @@ body {
  border-radius: 8px;
  overflow: hidden;
  background-color: rgb(29 41 58);
- box-shadow: 0 1px 3px rgba(17, 24, 39, .09);
+ box-shadow: 0 1px 3px rgba(17, 24, 39, 0.09);
 }
 .card-img {
  width: 100%;
