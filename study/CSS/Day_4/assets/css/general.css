@@ -1,0 +1,132 @@
+/***************************************************
+* Project name     : Portfolio.                    *
+* Author           : Islam.                        *
+* Version          : 1.0.                          *
+* File description : Global style CSS file.        *
+***************************************************/
+/*
+---- 01 TYPOGRAPHY SYSTEM. ----
+
+- Font sizes (px).
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98.
+
+- Font weights.
+Default: 400.
+Medium: .
+Semi-bold: .
+Bold: .
+
+- Line heights.
+Default: 1.
+Small: .
+Medium: .
+Paragraph default: .
+Large: .
+
+- Letter spacing.
+
+---- 02 COLORS. ----
+
+- Primary: .
+- Tints: .
+- Shades: .
+- Accents: .
+- Greys .
+
+---- 05 SHADOWS. ----
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075).
+
+---- 06 BORDER-RADIUS. ----
+
+Default: .
+Medium: .
+
+---- 07 WHITESPACE. ----
+
+- Spacing system (px).
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128.
+*/
+/************************
+* Custom property.      *
+************************/
+:root {
+ /* ------------------- Website color. ------------------- */
+ --clr-primary: hsl(193.03deg 100% 47.84%);
+ --clr-secondary: hsl(259.6deg 54.59% 36.27%);
+ /* ------------------- Website font. ------------------- */
+ --ff-primary: "Roboto Slab", serif;
+ --ff-secondary: "Inter", serif;
+ /* ------------------- Body. ------------------- */
+ --bg-body: hsl(261.6deg 59.52% 16.47%);
+ --clr-body: #fff;
+}
+/************************
+* Global style.         *
+************************/
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html {
+ font-size: 62.5%;
+ scroll-behavior: smooth;
+}
+body {
+ font-family: var(--ff-primary);
+ line-height: 1;
+ font-weight: 400;
+ color: var(--clr-body);
+ background-color: var(--bg-body);
+ display: flex;
+ flex-direction: column;
+ gap: 9.6rem;
+}
+.has-scrollbar::-webkit-scrollbar {
+ width: 10px; /* for vertical scroll. */
+ height: 10px; /* for horizontal scroll. */
+}
+.has-scrollbar::-webkit-scrollbar-thumb {
+ background: hsl(0, 0%, 90%);
+ border: 2px solid #fff;
+ -webkit-border-radius: 20px;
+ border-radius: 20px;
+}
+.has-scrollbar::-webkit-scrollbar-track {
+ background: hsl(0, 0%, 99%);
+}
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+ background: hsl(0, 0%, 80%);
+}
+a:link {
+ text-decoration: none;
+}
+ul {
+ list-style: none;
+}
+button,
+input {
+ border: none;
+ outline: none;
+}
+button,
+input,
+select,
+::placeholder {
+ color: inherit;
+ font-family: inherit;
+}
+::placeholder {
+ transition: all ease-in-out 0.5s;
+}
+.container {
+ padding: 0 16px;
+ margin: 0 auto;
+ max-width: 1300px;
+}
+/************************
+* Components.           *
+************************/

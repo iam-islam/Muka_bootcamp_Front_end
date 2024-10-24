@@ -1,0 +1,180 @@
+<!-- ***********************************************
+* Project name     : Dashboard.                    *
+* Author           : Islam.                        *
+* Version          : 1.0.                          *
+* File description : Main HTML file.               *
+************************************************ -->
+<!-------------------------
+- Start project.          -
+-------------------------->
+<!------------------- dd, dd:mm:yyyy hh:mm:ss XY. ------------------->
+<!-------------------------
+- End project.            -
+-------------------------->
+<!------------------- dd, dd:mm:yyyy hh:mm:ss XY. ------------------->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-------------------------
+  - Meta.                   -
+  -------------------------->
+  <meta charset="UTF-8" />
+  <meta name="author" content="Islam" />
+  <meta name="copyright" content="Geeks" />
+  <meta name="description" content="Dashboard" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-------------------------
+  - Title.                  -
+  -------------------------->
+  <title>Title</title>
+  <!-------------------------
+  - Google font.            -
+  -------------------------->
+  <!------------------- Primary. ------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+   rel="stylesheet"
+  />
+  <!------------------- Secondary. ------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+   rel="stylesheet"
+  />
+  <!------------------
+  - CSS files.       -
+  ------------------->
+  <!------------------- Global style. ------------------->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/general.css" />
+  <!------------------- Custom CSS file. ------------------->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/queries.css" />
+  <!------------------
+  - JS files.        -
+  ------------------->
+  <!------------------- Font awesome library. ------------------->
+  <script
+   src="https://kit.fontawesome.com/421f906acc.js"
+   crossorigin="anonymous"
+  ></script>
+  <!------------------- Custom JS file. ------------------->
+  <script defer src="assets/js/script.js"></script>
+ </head>
+ <body class="has-scrollbar">
+  <!------------------
+   - Home.           -
+  ------------------->
+  <section class="home">
+   <!------------------
+    - Header.          -
+    ------------------->
+   <header class="header">
+    <a href="#" class="logo">IS</a>
+    <nav>
+     <ul>
+      <li>
+       <a href="#" title="Dashboard">
+        <i class="fa-solid fa-chart-bar"></i>
+       </a>
+      </li>
+      <li>
+       <a href="#" title="Settings">
+        <i class="fa-solid fa-gear"></i>
+       </a>
+      </li>
+      <li>
+       <a href="#" title="Profile">
+        <i class="fa-solid fa-user"></i>
+       </a>
+      </li>
+      <li>
+       <a href="#" title="Projects">
+        <i class="fa-solid fa-diagram-project"></i>
+       </a>
+      </li>
+      <li>
+       <a href="#" title="Courses">
+        <i class="fa-solid fa-graduation-cap"></i>
+       </a>
+      </li>
+      <li>
+       <a href="#" title="Friends">
+        <i class="fa-regular fa-circle-user"></i>
+       </a>
+      </li>
+      <li>
+       <a href="#" class="Files">
+        <i class="fa-solid fa-file"></i>
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </header>
+
+   <section class="hero">
+    <form>
+     <i class="fa-solid fa-magnifying-glass"></i>
+     <input type="search" name="search" placeholder="Type a keywoard">
+    </form>
+    <div class="btns">
+     <button>
+      <i class="fa-solid fa-bell"></i>
+     </button>
+     <button>
+      <img src="assets/imgs/avatar.png" alt="Avatar">
+     </button>
+    </div>
+   </section>
+  </section>
+  <!------------------
+   - Main content.   -
+  ------------------->
+  <main class="main">
+   <h1 class="main-heading">Dashboard</h1>
+   <div class="boxes">
+    <div class="box welcome">
+     <header>
+      <div class="welcome-text">
+       <h2>Welcome</h2>
+       <p>Islam</p>
+      </div>
+      <img src="assets/imgs/welcome.png" alt="Welcome imge">
+     </header>
+     <div>
+      <div class="info">
+       <h3>Islam Saleh</h3>
+       <p>Developer</p>
+      </div>
+      <div class="info">
+       <h3>80</h3>
+       <p>Projects</p>
+      </div>
+      <div class="info">
+       <h3>&dollar;8500</h3>
+       <p>Earned</p>
+      </div>
+     </div>
+     <a href="#" class="btn">Profile</a>
+    </div>
+    <div class="box draft">
+     <header>
+      <div class="draft-text">
+       <h2>Quick Draft</h2>
+       <p>Write A Draft For Your Ideas</p>
+      </div>
+     </header>
+     <form>
+      <input type="text" name="title" placeholder="Title">
+      <textarea placeholder="Your Thought"></textarea>
+     </form>
+     <a href="#" class="btn">Save</a>
+    </div>
+   </div>
+  </main>
+ </body>
+</html>

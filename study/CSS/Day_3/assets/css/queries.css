@@ -1,0 +1,120 @@
+/***************************************************
+* Project name     : Anime blog.                   *
+* Author           : Islam.                        *
+* Version          : 1.0.                          *
+* File description : Media queries file.           *
+***************************************************/
+/* ------------------- Small devices (landscape phones, 576px and up). ------------------- */
+@media (max-width: 576px) {
+	html {
+		font-size: 50%;
+	}
+}
+/* ------------------- Medium devices (tablets, 768px and up). ------------------- */
+@media (max-width: 768px) {
+	.header .main-nav-list {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #0c0c29;
+		width: 100%;
+		justify-content: center;
+		transform: translateY(-100px);
+		height: 0;
+	}
+	.action .menu-btn {
+		display: block;
+	}
+	.blogs {
+		display: block;
+	}
+	.blog {
+		height: 333px;
+		margin-block: 1rem;
+	}
+	.footer .container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.footer .main-nav-list {
+		flex-wrap: wrap;
+		gap: 1.6rem;
+		justify-content: center;
+	}
+	.footer .container p {
+		text-align: center;
+	}
+}
+/* ------------------- Large devices (desktops, 992px and up). ------------------- */
+@media (max-width: 992px) {
+	.blogs {
+		grid-template-columns: repeat(3, 200px);
+		grid-template-rows: repeat(8, 285px);
+	}
+	.blog-1 {
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 2;
+		background-image: url("../imgs/blogs/blog-1.jpg");
+	}
+	.blog-2 {
+		grid-column: 3 / span 4;
+		background-image: url("../imgs/blogs/blog-2.jpg");
+	}
+	.blog-3 {
+		grid-column: 1 / span 2;
+		grid-row: 3;
+		background-image: url("../imgs/blogs/blog-3.jpg");
+	}
+	.blog-4 {
+		grid-column: 3 / span 2;
+		grid-row: 4;
+		background-image: url("../imgs/blogs/blog-4.jpg");
+	}
+	.blog-5 {
+		grid-column: 2 / span 3;
+		grid-row: 7;
+		background-image: url("../imgs/blogs/blog-5.jpg");
+	}
+	.blog-8 {
+		grid-column: 1 / span 2;
+		grid-row: 6;
+		background-image: url("../imgs/blogs/blog-8.jpg");
+	}
+	.blog-9 {
+		grid-column: 1;
+		grid-row: 7;
+		background-image: url("../imgs/blogs/blog-9.jpg");
+	}
+	.blog-10 {
+		grid-column: 3 / span 2;
+		grid-row: 8;
+		background-image: url("../imgs/blogs/blog-10.jpg");
+	}
+	.blog-11 {
+		grid-column: 1 / -2;
+		grid-row: 8;
+		background-image: url("../imgs/blogs/blog-11.jpg");
+	}
+	.blog-12 {
+		grid-column: 3 / span 2;
+		grid-row: 5 / span 2;
+		background-image: url("../imgs/blogs/blog-12.jpg");
+	}
+}
+@media (min-width: 992px) {
+	.blogs {
+		grid-template-columns: repeat(4, 222px);
+	}
+}
+/* ------------------- X-Large devices (large desktops, 1200px and up). ------------------- */
+@media (min-width: 1200px) {
+	.blogs {
+		grid-template-columns: repeat(4, 288px);
+	}
+}
+/* ------------------- XX-Large devices (larger desktops, 1400px and up). ------------------- */
+@media (min-width: 1400px) {
+	.blogs {
+		grid-template-columns: repeat(4, 303px);
+	}
+}

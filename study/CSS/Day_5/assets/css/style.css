@@ -1,0 +1,236 @@
+/***************************************************
+* Project name     : Dashboard.                    *
+* Author           : Islam.                        *
+* Version          : 1.0.                          *
+* File description : Main CSS file.                *
+***************************************************/
+/************************
+* Home.                 *
+************************/
+/************************
+* Header.               *
+************************/
+.header {
+ background-color: #fff;
+ width: 64px;
+ padding: 1rem;
+ height: 100vh;
+ position: fixed;
+ text-align: center;
+ box-shadow: 0 0 10px #ddd;
+}
+.header .logo {
+	font-size: 2.4rem;
+	color: #000;
+	font-weight: 600;
+	margin: 1.6rem 0 4.8rem;
+	display: block;
+	position: relative;
+}
+.header .logo::after {
+	content: "";
+	position: absolute;
+	bottom: -16px;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+}
+.header .logo::before {
+	content: "";
+	width: 8px;
+	position: absolute;
+	bottom: -18px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 8px;
+	background-color: #000;
+	display: block;
+	border-radius: 50%;
+}
+.header nav ul li a {
+	color: #000;
+	font-size: 1.8rem;
+	display: block;
+	margin-bottom: 2.4rem;
+	transition: 0.5s;
+}
+.header nav ul li a:hover {
+	color: #0076f9;
+}
+.hero {
+	padding: 1.6rem;
+ padding-left: 88px;
+	background-color: #fff;
+	box-shadow: 0 0 10px #ddd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.hero form input {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 1rem;
+	padding-left: 3rem;
+	border-radius: 8px;
+	font-size: 1.4rem;
+	width: 170px;
+	transition: 0.5s;
+}
+.hero form input:focus {
+	width: 200px;
+}
+::placeholder {
+	color: #777;
+}
+:focus::placeholder {
+	color: transparent;
+}
+.hero form i {
+	transform: translateX(26px);
+	color: #777;
+	font-size: 1.6rem;
+}
+.hero .btns {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	font-size: 1.6rem;
+}
+.hero .btns img {
+	width: 24px;
+}
+.hero .btns button {
+	position: relative;
+	cursor: pointer;
+}
+.hero .btns button:first-child::after {
+	content: "";
+	position: absolute;
+	top: -4px;
+	right: -3px;
+	width: 8px;
+	height: 8px;
+ box-shadow: 0 0 10px #ddd;
+	border-radius: 50%;
+	background-color: #ff313d;
+}
+/************************
+* Main.                 *
+************************/
+.main {
+ padding-left: 88px;
+ padding-right: 1.6rem;
+}
+.main-heading {
+	font-size: 3.2rem;
+	position: relative;
+	width: fit-content;
+	margin-bottom: 4.8rem;
+}
+.main-heading::after {
+	content: "";
+	position: absolute;
+	bottom: -16px;
+	left: 0;
+	display: block;
+	width: 30%;
+	height: 3px;
+	border-radius: 8px;
+	background-color: #000;
+}
+.box {
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 4.8rem;
+}
+.welcome header {
+	padding: 2.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eeeeee;
+}
+.welcome header img {
+	width: 200px;
+}
+.welcome-text h2 {
+	font-size: 2.4rem;
+	margin-bottom: 1.6rem;
+}
+.welcome-text p {
+	font-size: 1.6rem;
+	color: #0076f9;
+}
+.welcome > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3.2rem;
+	text-align: center;
+	font-size: 1.6rem;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.welcome .info h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1.6rem;
+	font-weight: 400;
+}
+.welcome .info p {
+	font-size: 1.4rem;
+	color: #0076f9;
+}
+.btn {
+	padding: 1rem 1.2rem;
+	color: #fff;
+	font-weight: 500;
+	background-color: #0076f9;
+	font-size: 1.4rem;
+	border-radius: 6px;
+	display: block;
+	width: fit-content;
+	margin: 1.6rem 1.6rem 1.6rem auto;
+	transition: 0.5s;
+}
+.btn:hover {
+	background-color: #0d69d5;
+}
+.draft {
+	padding: 2.4rem 0 0 2.4rem;
+}
+.draft-text h2 {
+	font-size: 2.4rem;
+	margin-bottom: 1.6rem;
+}
+.draft-text p {
+	font-size: 1.4rem;
+	color: #0076f9;
+	margin-bottom: 3.2rem;
+}
+.draft form {
+	padding-right: 1.6rem;
+}
+.draft form * {
+	background-color: #eeeeee;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 1.2rem;
+	display: block;
+	border-radius: 8px;
+	font-size: 1.4rem;
+	outline: none;
+	margin-bottom: 1.6rem;
+	width: 100%;
+	resize: none;
+}
+.draft form textarea {
+	height: 200px;
+}
+/* ------------------- Sections. ------------------- */
+/************************
+* Footer.               *
+************************/
+.footer {
+ background-color: #aaa;
+}
