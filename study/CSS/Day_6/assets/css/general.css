@@ -1,0 +1,42 @@
+/***************************************************
+* Project name     : interactive image gallery.    *
+* Author           : Islam.                        *
+* Version          : 1.0.                          *
+* File description : Global style CSS file.        *
+***************************************************/
+/************************
+* Custom property.      *
+************************/
+:root {
+ /* ------------------- Website color. ------------------- */
+ --clr-primary: ;
+ --clr-secondary: ;
+ /* ------------------- Website font. ------------------- */
+ --ff-primary: "Roboto Slab", serif;
+ --ff-secondary: "Inter", serif;
+ /* ------------------- Body. ------------------- */
+ --bg-body: ;
+ --clr-body: ;
+}
+/************************
+* Global style.         *
+************************/
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html {
+ font-size: 62.5%;
+ scroll-behavior: smooth;
+}
+body {
+ font-family: var(--ff-primary);
+ line-height: 1;
+ font-weight: 400;
+ color: var(--clr-body);
+ background-color: var(--bg-body);
+
+}

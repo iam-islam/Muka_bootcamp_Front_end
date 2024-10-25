@@ -1,0 +1,35 @@
+/***************************************************
+* Project name     : interactive image gallery.    *
+* Author           : Islam.                        *
+* Version          : 1.0.                          *
+* File description : Main CSS file.                *
+***************************************************/
+/************************
+* Main.                 *
+************************/
+h1 {
+	text-align: center;
+	font-size: 6.4rem;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(288px, 1fr));
+	gap: 4rem;
+	margin: auto;
+	width: fit-content;
+}
+img {
+	border-radius: 8px;
+	width: 288px;
+	height: 288px;
+	box-shadow: 14px 18px 33px 2px rgba(0,0,0,0.69);
+	cursor: pointer;
+	transition: 0.5s;
+	transform: scale(0.9) rotate(5deg);
+	filter: blur(1px) grayscale(100%);
+
+}
+img:hover {
+	filter: blur(0) grayscale(0);
+	transform: scale(0.9);
+}
